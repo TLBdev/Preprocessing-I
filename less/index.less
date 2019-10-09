@@ -50,10 +50,202 @@ table {
 
 /* Set every element's box-sizing to border-box */
 * {
-    box-sizing: border-box;
+	box-sizing: border-box;
+	max-width: 100%;
+	
 }
-
+html{
+	font-size: 62.5%;
+}
 html, body {
     height: 100%;
 }
 
+body{
+	margin: 2%;
+	
+	
+}
+h1{
+	color: gray
+}
+.troubleshoot(){
+	border: 2px solid black;
+	background-color: gray;
+}
+@textL: 3rem;
+@textM: 2.5rem;
+@textS: 2rem; 
+.flexOuter(){
+	@media (min-width: 641px){
+		display: flex;
+		flex-wrap: wrap;
+
+	}
+}
+.flexInner(){
+	@media (min-width: 641px){
+		width: 48%
+	}
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+	margin-top: 2%;
+	h1{
+		padding: 2%;
+		font-size: 2.5rem;
+		
+	}
+	nav{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		width: 100%;
+		@media (min-width: 641px) {
+			flex-direction: row;
+        	justify-content: space-around;
+		}
+		a{
+			font-size: 2rem;
+			text-decoration: none;
+			width: 100%;
+			border-bottom: 1px solid black;
+			color: gray;
+			text-align: center;
+			padding: 2%;
+			@media (min-width: 641px){
+				width: 15%;
+				border-radius: 20%;
+				
+			}
+			
+		}
+		
+		
+	}
+}
+
+#skills{
+	padding-top: 3%;
+	display: flex;
+	flex-direction: column;
+	
+	
+	h1{
+		font-size: @textL;
+		text-align: center;
+		border-bottom: 2px solid gray;
+		border-radius: 10%;
+		margin-bottom: 3%;
+	}
+	.skillsCont{
+		.flexOuter();
+		div{
+			.flexInner();
+		}
+		h1{
+			padding-top: 1%;
+			font-size: @textM;
+			margin-bottom: 1%;
+
+		}
+		p{
+			font-size: @textS;
+		}
+	}
+}
+#hobbies{
+	padding-top: 3%;
+	display: flex;
+	flex-direction: column;
+	
+	
+	h1{
+		font-size: @textL;
+		text-align: center;
+		border-bottom: 2px solid gray;
+		border-radius: 10%;
+		margin-bottom: 3%;
+	}
+	.hobbiesCont{
+		.flexOuter();
+		div{
+			.flexInner();
+		}
+		h1{
+			padding-top: 1%;
+			font-size: @textM;
+			margin-bottom: 1%;
+
+		}
+		p{
+			font-size: @textS;
+		}
+	}
+}
+#history{
+	padding-top: 3%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10%;
+	
+	h1{
+		font-size: @textL;
+		text-align: center;
+		border-bottom: 2px solid gray;
+		border-radius: 10%;
+		margin-bottom: 3%;
+	}
+	.historyCont{
+		.flexOuter();
+		div{
+			.flexInner();
+		}
+		h1{
+			padding-top: 1%;
+			font-size: @textM;
+			margin-bottom: 1%;
+
+		}
+		h2{
+			font-size: @textM;
+
+		}
+		p{
+			font-size: @textS;
+		}
+	}
+}
+#contact{
+	padding-top: 3%;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 10%;
+	
+	h1{
+		font-size: @textL;
+		text-align: center;
+		border-bottom: 2px solid gray;
+		border-radius: 10%;
+		margin-bottom: 3%;
+	}
+	.contactCont{
+		h1{
+			padding-top: 1%;
+			font-size: @textM;
+			margin-bottom: 1%;
+
+		}
+		
+	}
+}
+
+
+
+
+
+	

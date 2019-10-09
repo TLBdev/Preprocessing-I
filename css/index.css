@@ -1,1 +1,298 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 2%;
+}
+h1 {
+  color: gray;
+}
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2%;
+}
+header h1 {
+  padding: 2%;
+  font-size: 2.5rem;
+}
+header nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+@media (min-width: 641px) {
+  header nav {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+header nav a {
+  font-size: 2rem;
+  text-decoration: none;
+  width: 100%;
+  border-bottom: 1px solid black;
+  color: gray;
+  text-align: center;
+  padding: 2%;
+}
+@media (min-width: 641px) {
+  header nav a {
+    width: 15%;
+    border-radius: 20%;
+  }
+}
+#skills {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+#skills h1 {
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  border-radius: 10%;
+  margin-bottom: 3%;
+}
+@media (min-width: 641px) {
+  #skills .skillsCont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 641px) {
+  #skills .skillsCont div {
+    width: 48%;
+  }
+}
+#skills .skillsCont h1 {
+  padding-top: 1%;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
+#skills .skillsCont p {
+  font-size: 2rem;
+}
+#hobbies {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+}
+#hobbies h1 {
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  border-radius: 10%;
+  margin-bottom: 3%;
+}
+@media (min-width: 641px) {
+  #hobbies .hobbiesCont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 641px) {
+  #hobbies .hobbiesCont div {
+    width: 48%;
+  }
+}
+#hobbies .hobbiesCont h1 {
+  padding-top: 1%;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
+#hobbies .hobbiesCont p {
+  font-size: 2rem;
+}
+#history {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+#history h1 {
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  border-radius: 10%;
+  margin-bottom: 3%;
+}
+@media (min-width: 641px) {
+  #history .historyCont {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+@media (min-width: 641px) {
+  #history .historyCont div {
+    width: 48%;
+  }
+}
+#history .historyCont h1 {
+  padding-top: 1%;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
+#history .historyCont h2 {
+  font-size: 2.5rem;
+}
+#history .historyCont p {
+  font-size: 2rem;
+}
+#contact {
+  padding-top: 3%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10%;
+}
+#contact h1 {
+  font-size: 3rem;
+  text-align: center;
+  border-bottom: 2px solid gray;
+  border-radius: 10%;
+  margin-bottom: 3%;
+}
+#contact .contactCont h1 {
+  padding-top: 1%;
+  font-size: 2.5rem;
+  margin-bottom: 1%;
+}
